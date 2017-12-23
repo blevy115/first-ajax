@@ -8,6 +8,8 @@ Step 0
   3. HTTP status code was 200(OK).
   4. The request was a HTML document request (normal browser request) initiator was "Other".
 
-  Step 1
+Step 1
   5. Status is 200(OK)), method is still "GET"
   6. Type was "xhr" and the initiator was jquery
+
+Step 2
