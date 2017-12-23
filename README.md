@@ -13,5 +13,7 @@ Step 1
   6. Type was "xhr" and the initiator was jquery
 
 Step 3
-  4. Response was teh text "Wow what a ride! I came all the way from the server!"
-  
+  4. Response was the text "Wow what a ride! I came all the way from the server!"
+
+Step 4
+  3. HTTP status code is 500 (Internal Server Error)
