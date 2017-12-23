@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }).fail(function(){
       var textnode = document.createTextNode("There was an error, will try harder next time");
       section2.appendChild(textnode);
+    }).always(function(){
+      console.log("Hey! The request was finished");
     });
   });
 });
