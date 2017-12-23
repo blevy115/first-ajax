@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   button2.addEventListener('click', function(){
     $.ajax({
-      url:'http://first-ajax-api.herokuapp.com/pong',
+      url:'http://first-ajax-api.herokuapp.com/ping',
       method:'GET',
       dataType:'text',
     }).done(function(responseData){
@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function() {
       var textnode = document.createTextNode(responseData);
       section2.appendChild(textnode);
     }).fail(function(){
+      console.log("There was an error requesting the response");
       var textnode = document.createTextNode("There was an error, will try harder next time");
       section2.appendChild(textnode);
     }).always(function(){
