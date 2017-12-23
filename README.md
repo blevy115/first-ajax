@@ -12,4 +12,6 @@ Step 1
   5. Status is 200(OK)), method is still "GET"
   6. Type was "xhr" and the initiator was jquery
 
-Step 2
+Step 3
+  4. Response was teh text "Wow what a ride! I came all the way from the server!"
+  

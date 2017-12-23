@@ -1,11 +1,24 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  var button = document.body.querySelector('#button')
-  button.addEventListener('click', function(e){
+  var button1 = document.body.querySelector('#button1')
+  var button2 = document.body.querySelector('#button2')
+  var section2 = document.body.querySelector('#step3456')
+  button1.addEventListener('click', function(){
     $.ajax({
       url:'http://first-ajax-api.herokuapp.com/',
       method:'GET',
       dataType:'text',
     });
   });
+  button2.addEventListener('click', function(){
+    $.ajax({
+      url:'http://first-ajax-api.herokuapp.com/ping',
+      method:'GET',
+      dataType:'text',
+    }).done(function(responseData){
+      console.log(responseData);
+      var textnode = document.createTextNode(responseData);
+      section2.appendChild(textnode);
+    });
+  })
 });
