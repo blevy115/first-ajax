@@ -24,3 +24,6 @@ Step 6
 
 Step 7
   4. Returned value was 38790 and increased for each click request
+
+Step 9
+  3. Accept:text/html, */*; q=0.01, Content-Type:text/html; charset=utf-8

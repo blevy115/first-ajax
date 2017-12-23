@@ -1,12 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-  var button1 = document.body.querySelector('#button1')
-  var button2 = document.body.querySelector('#button2')
-  var button3 = document.body.querySelector('#button3')
-  var button4 = document.body.querySelector('#button4')
-  var section2 = document.body.querySelector('#step3456')
-  var section3 = document.body.querySelector('#step7')
-  var section4 = document.body.querySelector('#step8')
+  var button1 = document.body.querySelector('#button1');
+  var button2 = document.body.querySelector('#button2');
+  var button3 = document.body.querySelector('#button3');
+  var button4 = document.body.querySelector('#button4');
+  var button5 = document.body.querySelector('#button5');
+  var section2 = document.body.querySelector('#step3456');
+  var section3 = document.body.querySelector('#step7');
+  var section4 = document.body.querySelector('#step8');
+  var section5 = document.body.querySelector('#step9');
+  var aCar = document.body.querySelector('#a_car');
 
   button1.addEventListener('click', function(){
     $.ajax({
@@ -53,6 +56,17 @@ document.addEventListener("DOMContentLoaded", function() {
       console.log(responseData);
       var textnode = document.createTextNode(responseData);
       section4.appendChild(textnode);
-    });;
+    });
+  });
+  button5.addEventListener('click', function(){
+    $.ajax({
+      url:'http://first-ajax-api.herokuapp.com/a_car',
+      method:'GET',
+      dataType:'html',
+    }).done(function(responseData){
+      var liNode = document.createElement('span');
+      liNode.innerHTML = responseData;
+      aCar.appendChild(liNode);
+    });
   });
 });
