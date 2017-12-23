@@ -21,3 +21,6 @@ Step 4
 Step 6
   2. For "/ping" the returned status code is 304 and the console outputs both the done and always console.log.  
      For "/pong" there is the internal service error 500 and the console outputs both fail and always console.log as well as the service error code.
+
+Step 7
+  4. Returned value was 38790 and increased for each click request
