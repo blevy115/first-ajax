@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
     $.ajax({
       url:'http://first-ajax-api.herokuapp.com/count',
       method:'GET',
+      data: {'amount':5},
       dataType:'text',
     }).done(function(responseData){
       console.log(responseData);

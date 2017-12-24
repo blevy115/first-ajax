@@ -27,3 +27,6 @@ Step 7
 
 Step 9
   3. Accept:text/html, */*; q=0.01, Content-Type:text/html; charset=utf-8
+
+Stretch
+  "/count" accepts an data paramater amount which is an integer that increase the total count by that amount when the request is made.
