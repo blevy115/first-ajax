@@ -91,8 +91,8 @@ document.addEventListener("DOMContentLoaded", function() {
       var liNode = document.createElement('li');
       liNode.innerText = time + " " + responseData ;
       times.appendChild(liNode);
-    }).fail(function(){
-      alert("Not an Available TimeZone, try again")
+    }).fail(function(responseData){
+      alert(time + " is not an available timezone, try again")
     });
   });
 });
